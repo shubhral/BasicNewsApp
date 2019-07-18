@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TechNewsSample</string>
+    <string name="label_news_feed">News</string>
+    <string name="label_news_feed_detail">News Detail</string>
+    <string name="invalid_story_url">Unable to load full story!</string>
+    <string name="exception_msg">Activity must implement fragment\'s callbacks.</string>
+    <string name="no_results">No results found</string>
+</resources>
