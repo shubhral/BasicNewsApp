@@ -13,7 +13,6 @@ public class NewsFeedInteractor extends BaseInteractor {
 
     @Override
     public Observable<ResponseBody> run() {
-        Observable<ResponseBody> obj = mFeedRepository.getNewsFeed();
-        return obj;
+        return mFeedRepository.getNewsFeed();
     }
 }
