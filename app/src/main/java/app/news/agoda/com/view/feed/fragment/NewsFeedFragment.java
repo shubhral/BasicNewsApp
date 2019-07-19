@@ -31,7 +31,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import domain.news.agoda.com.model.NewsResponseDomain;
 
-public class NewsFeedFragment extends Fragment implements NewsFeedFragView, NewsFeedClickListener {
+public class NewsFeedFragment extends Fragment implements NewsFeedView, NewsFeedClickListener {
 
     private Callbacks mCallbacks = sDummyCallbacks;
 
@@ -79,7 +79,7 @@ public class NewsFeedFragment extends Fragment implements NewsFeedFragView, News
         if (PermissionUtils.checkInternetPermission(getContext())) {
             newsFeedFragmentPresenter.getNewsFeeds();
         } else {
-            Toast.makeText(getContext(), "Internet permission not granted", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), getString(R.string.no_internet_permission), Toast.LENGTH_LONG).show();
         }
         return rootView;
     }

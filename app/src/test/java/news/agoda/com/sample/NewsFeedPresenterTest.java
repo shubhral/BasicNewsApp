@@ -1,8 +1,5 @@
 package news.agoda.com.sample;
 
-import domain.news.agoda.com.NewsFeedEntityDomainMapper;
-import domain.news.agoda.com.NewsFeedInteractor;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Matchers;
@@ -14,6 +11,10 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
+import app.news.agoda.com.view.feed.fragment.NewsFeedFragmentPresenter;
+import app.news.agoda.com.view.feed.fragment.NewsFeedView;
+import domain.news.agoda.com.NewsFeedEntityDomainMapper;
+import domain.news.agoda.com.NewsFeedInteractor;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
 import io.reactivex.android.plugins.RxAndroidPlugins;
@@ -22,8 +23,6 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.internal.schedulers.ExecutorScheduler;
 import io.reactivex.plugins.RxJavaPlugins;
-import app.news.agoda.com.view.feed.fragment.NewsFeedFragView;
-import app.news.agoda.com.view.feed.fragment.NewsFeedFragmentPresenter;
 import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 
@@ -35,7 +34,7 @@ public class NewsFeedPresenterTest {
     @Mock
     NewsFeedEntityDomainMapper newsFeedEntityDomainMapper;
     @Mock
-    NewsFeedFragView newsFeedView;
+    NewsFeedView newsFeedView;
 
     @Before
     public void testSetUp() {

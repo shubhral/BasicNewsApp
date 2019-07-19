@@ -5,4 +5,5 @@
     <string name="invalid_story_url">Unable to load full story!</string>
     <string name="exception_msg">Activity must implement fragment\'s callbacks.</string>
     <string name="no_results">No results found</string>
+    <string name="no_internet_permission">Internet permission not granted</string>
 </resources>

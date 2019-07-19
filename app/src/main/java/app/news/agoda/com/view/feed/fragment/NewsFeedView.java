@@ -6,6 +6,6 @@ import java.util.List;
 
 import app.news.agoda.com.view.BaseView;
 
-public interface NewsFeedFragView extends BaseView {
+public interface NewsFeedView extends BaseView {
     void newsFeedResponse(List<NewsResponseDomain> results);
 }

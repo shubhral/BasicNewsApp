@@ -13,12 +13,12 @@ import okhttp3.ResponseBody;
 
 public class NewsFeedFragmentPresenter {
 
-    private NewsFeedFragView newsFeedView;
+    private NewsFeedView newsFeedView;
     private NewsFeedInteractor newsFeedInteractor;
     private NewsFeedEntityDomainMapper newsFeedEntityDomainMapper;
 
     @Inject
-    public NewsFeedFragmentPresenter(NewsFeedFragView newsFeedFragment, NewsFeedInteractor newsFeedInteractor, NewsFeedEntityDomainMapper newsFeedEntityDomainMapper) {
+    public NewsFeedFragmentPresenter(NewsFeedView newsFeedFragment, NewsFeedInteractor newsFeedInteractor, NewsFeedEntityDomainMapper newsFeedEntityDomainMapper) {
         this.newsFeedView = newsFeedFragment;
         this.newsFeedInteractor = newsFeedInteractor;
         this.newsFeedEntityDomainMapper = newsFeedEntityDomainMapper;
