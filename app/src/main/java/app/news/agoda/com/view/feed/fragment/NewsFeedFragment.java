@@ -1,6 +1,5 @@
 package app.news.agoda.com.view.feed.fragment;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -85,7 +84,7 @@ public class NewsFeedFragment extends Fragment implements NewsFeedView, NewsFeed
     }
 
     @Override
-    public void onAttach(Activity activity) {
+    public void onAttach(Context activity) {
         super.onAttach(activity);
         if (!(activity instanceof Callbacks)) {
             throw new IllegalStateException(activity.getString(R.string.exception_msg));
