@@ -1,7 +1,6 @@
-package domain.news.agoda.com;
+package app.news.agoda.com.domain;
 
-import domain.news.agoda.com.network.APIInterface;
-
+import app.news.agoda.com.domain.network.APIInterface;
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
 

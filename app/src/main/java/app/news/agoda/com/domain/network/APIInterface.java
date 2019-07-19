@@ -1,4 +1,4 @@
-package domain.news.agoda.com.network;
+package app.news.agoda.com.domain.network;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;

@@ -11,10 +11,10 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
+import app.news.agoda.com.domain.NewsFeedEntityDomainMapper;
+import app.news.agoda.com.domain.NewsFeedInteractor;
 import app.news.agoda.com.view.feed.fragment.NewsFeedFragmentPresenter;
 import app.news.agoda.com.view.feed.fragment.NewsFeedView;
-import domain.news.agoda.com.NewsFeedEntityDomainMapper;
-import domain.news.agoda.com.NewsFeedInteractor;
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
 import io.reactivex.android.plugins.RxAndroidPlugins;

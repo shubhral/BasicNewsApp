@@ -1,4 +1,4 @@
-package domain.news.agoda.com;
+package app.news.agoda.com.domain;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import domain.news.agoda.com.model.MultiMediumDomain;
-import domain.news.agoda.com.model.MultiMediumEntity;
-import domain.news.agoda.com.model.NewsEntity;
-import domain.news.agoda.com.model.NewsResponseDomain;
-import domain.news.agoda.com.model.Result;
+import app.news.agoda.com.domain.model.MultiMediumDomain;
+import app.news.agoda.com.domain.model.MultiMediumEntity;
+import app.news.agoda.com.domain.model.NewsEntity;
+import app.news.agoda.com.domain.model.NewsResponseDomain;
+import app.news.agoda.com.domain.model.Result;
 
 
 public class NewsFeedEntityDomainMapper {

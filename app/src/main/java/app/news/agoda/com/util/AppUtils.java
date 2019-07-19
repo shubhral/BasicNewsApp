@@ -2,11 +2,10 @@ package app.news.agoda.com.util;
 
 import android.net.Uri;
 
-import domain.news.agoda.com.model.MultiMediumDomain;
-import domain.news.agoda.com.model.NewsResponseDomain;
-
 import java.util.List;
 
+import app.news.agoda.com.domain.model.MultiMediumDomain;
+import app.news.agoda.com.domain.model.NewsResponseDomain;
 import app.news.agoda.com.view.BundleKeys;
 
 public class AppUtils {

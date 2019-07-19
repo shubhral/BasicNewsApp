@@ -1,12 +1,11 @@
 package news.agoda.com.sample;
 
-import domain.news.agoda.com.NewsFeedEntityDomainMapper;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import domain.news.agoda.com.model.NewsEntity;
+import app.news.agoda.com.domain.NewsFeedEntityDomainMapper;
+import app.news.agoda.com.domain.model.NewsEntity;
 
 public class MediaParserTest {
 
@@ -20,18 +19,18 @@ public class MediaParserTest {
     }
 
     @Test
-    public void testParsedResposeNotNull() {
+    public void testParsedResponseNotNull() {
         Assert.assertNotNull(parsedNewsEntity);
     }
 
     @Test
-    public void testParsedResposeNull() {
+    public void testParsedResponseNull() {
         parsedNewsEntity = newsFeedEntityDomainMapper.parseResponse(null);
         Assert.assertNull(parsedNewsEntity.getStatus());
     }
 
     @Test
-    public void testParsedRespose() {
+    public void testParsedResponse() {
         Assert.assertTrue(parsedNewsEntity.getNumResults() == 4);
     }
 

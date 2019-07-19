@@ -1,20 +1,19 @@
 package news.agoda.com.sample;
 
-import domain.news.agoda.com.NewsFeedEntityDomainMapper;
-
 import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import domain.news.agoda.com.model.NewsEntity;
+import app.news.agoda.com.domain.NewsFeedEntityDomainMapper;
+import app.news.agoda.com.domain.model.NewsEntity;
 
 public class NewsEntityTest {
 
     private NewsFeedEntityDomainMapper newsFeedEntityDomainMapper;
     private NewsEntity parsedNewsEntity;
 
-    private String storyUrl = "http://www.nytimes.com/2015/08/18/business/work-policies-may-be-kinder-but-brutal-competition-isnt.html";
+    private final String storyUrl = "http://www.nytimes.com/2015/08/18/business/work-policies-may-be-kinder-but-brutal-competition-isnt.html";
 
     @Before
     public void setUp() {

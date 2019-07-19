@@ -27,8 +27,6 @@ public class PermissionUtils {
                             REQUEST_PERMISSION_INTERNET);
                 }
                 requestPermission = false;
-            } else {
-                requestPermission = true;
             }
         }
         return requestPermission;

@@ -23,12 +23,12 @@ import app.news.agoda.com.dagger.component.DaggerNewFeedActivityComponent;
 import app.news.agoda.com.dagger.component.NewFeedActivityComponent;
 import app.news.agoda.com.dagger.module.ActivityModule;
 import app.news.agoda.com.dagger.module.NewsFeedFragmentModule;
+import app.news.agoda.com.domain.model.NewsResponseDomain;
 import app.news.agoda.com.util.PermissionUtils;
 import app.news.agoda.com.view.adapter.NewsFeedClickListener;
 import app.news.agoda.com.view.adapter.NewsListAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import domain.news.agoda.com.model.NewsResponseDomain;
 
 public class NewsFeedFragment extends Fragment implements NewsFeedView, NewsFeedClickListener {
 

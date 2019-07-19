@@ -1,14 +1,15 @@
 package app.news.agoda.com.view.feed.fragment;
 
-import domain.news.agoda.com.NewsFeedEntityDomainMapper;
-import domain.news.agoda.com.NewsFeedInteractor;
+import android.annotation.SuppressLint;
 
 import javax.inject.Inject;
 
+import app.news.agoda.com.domain.NewsFeedEntityDomainMapper;
+import app.news.agoda.com.domain.NewsFeedInteractor;
+import app.news.agoda.com.domain.model.NewsEntity;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
-import domain.news.agoda.com.model.NewsEntity;
 import okhttp3.ResponseBody;
 
 public class NewsFeedFragmentPresenter {
@@ -24,6 +25,7 @@ public class NewsFeedFragmentPresenter {
         this.newsFeedEntityDomainMapper = newsFeedEntityDomainMapper;
     }
 
+    @SuppressLint("CheckResult")
     public void getNewsFeeds() {
         newsFeedView.showProgress();
         newsFeedInteractor.execute()

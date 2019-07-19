@@ -14,10 +14,10 @@ import java.util.List;
 import javax.inject.Inject;
 
 import app.news.agoda.com.R;
+import app.news.agoda.com.domain.model.NewsResponseDomain;
 import app.news.agoda.com.util.AppUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import domain.news.agoda.com.model.NewsResponseDomain;
 
 public class NewsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

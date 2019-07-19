@@ -1,4 +1,4 @@
-package domain.news.agoda.com.model;
+package app.news.agoda.com.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;

@@ -1,10 +1,10 @@
 package app.news.agoda.com.dagger.module;
 
 import app.news.agoda.com.dagger.scope.NewsFeedApplicationScope;
+import app.news.agoda.com.domain.network.APIInterface;
 import app.news.agoda.com.util.AppConstants;
 import dagger.Module;
 import dagger.Provides;
-import domain.news.agoda.com.network.APIInterface;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;

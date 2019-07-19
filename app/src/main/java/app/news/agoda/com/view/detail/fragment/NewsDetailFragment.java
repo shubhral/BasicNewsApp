@@ -22,12 +22,12 @@ import app.news.agoda.com.R;
 import app.news.agoda.com.dagger.component.DaggerNewDetailActivityComponent;
 import app.news.agoda.com.dagger.component.NewDetailActivityComponent;
 import app.news.agoda.com.dagger.module.NewsDetailFragmentModule;
+import app.news.agoda.com.domain.model.NewsResponseDomain;
 import app.news.agoda.com.util.AppUtils;
 import app.news.agoda.com.view.BundleKeys;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import domain.news.agoda.com.model.NewsResponseDomain;
 
 public class NewsDetailFragment extends Fragment implements NewsDetailView {
 

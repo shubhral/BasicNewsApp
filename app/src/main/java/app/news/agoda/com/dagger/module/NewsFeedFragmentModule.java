@@ -2,19 +2,18 @@ package app.news.agoda.com.dagger.module;
 
 import android.content.Context;
 
-import domain.news.agoda.com.NewsFeedEntityDomainMapper;
-import domain.news.agoda.com.network.APIInterface;
-import domain.news.agoda.com.NewsFeedInteractor;
-import domain.news.agoda.com.NewsFeedRepository;
-
 import javax.inject.Named;
 
-import dagger.Module;
-import dagger.Provides;
 import app.news.agoda.com.dagger.scope.MainActivityScope;
+import app.news.agoda.com.domain.NewsFeedEntityDomainMapper;
+import app.news.agoda.com.domain.NewsFeedInteractor;
+import app.news.agoda.com.domain.NewsFeedRepository;
+import app.news.agoda.com.domain.network.APIInterface;
 import app.news.agoda.com.view.adapter.NewsListAdapter;
 import app.news.agoda.com.view.feed.fragment.NewsFeedFragment;
 import app.news.agoda.com.view.feed.fragment.NewsFeedFragmentPresenter;
+import dagger.Module;
+import dagger.Provides;
 
 @Module(includes = ActivityModule.class)
 public class NewsFeedFragmentModule {
@@ -50,7 +49,7 @@ public class NewsFeedFragmentModule {
 
     @Provides
     @MainActivityScope
-    public NewsFeedEntityDomainMapper newsFeedEntityDomaninMapper() {
+    public NewsFeedEntityDomainMapper newsFeedEntityDomainMapper() {
         return new NewsFeedEntityDomainMapper();
     }
 }

@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
 import app.news.agoda.com.R;
+import app.news.agoda.com.domain.model.NewsResponseDomain;
 import app.news.agoda.com.view.BundleKeys;
 import app.news.agoda.com.view.detail.NewsDetailActivity;
 import app.news.agoda.com.view.detail.fragment.NewsDetailFragment;
 import app.news.agoda.com.view.feed.fragment.NewsFeedFragment;
-import domain.news.agoda.com.model.NewsResponseDomain;
 
 public class NewsFeedActivity extends FragmentActivity implements NewsFeedFragment.Callbacks {
 
