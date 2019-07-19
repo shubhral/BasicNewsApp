@@ -11,7 +11,7 @@ import app.news.agoda.com.dagger.scope.MainActivityScope;
 
 @Module
 public class ActivityModule {
-    Context context;
+    private final Context context;
 
     public ActivityModule(Activity context) {
         this.context = context;

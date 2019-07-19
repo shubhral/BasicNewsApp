@@ -25,14 +25,7 @@ public class NewsDetailActivity extends FragmentActivity {
             if (extras == null) {
                 return;
             }
-            String storyURL = extras.getString(BundleKeys.FULL_STORY_URL);
-            String title = extras.getString(BundleKeys.TITLE);
-            String summary = extras.getString(BundleKeys.DESCRIPTION);
-            String imageURL = extras.getString(BundleKeys.TITLE_IMAGE_URL);
-            arguments.putString(BundleKeys.FULL_STORY_URL, storyURL);
-            arguments.putString(BundleKeys.TITLE, title);
-            arguments.putString(BundleKeys.DESCRIPTION, summary);
-            arguments.putString(BundleKeys.TITLE_IMAGE_URL, imageURL);
+            arguments.putParcelable(BundleKeys.RESULT, extras.getParcelable(BundleKeys.RESULT));
             NewsDetailFragment fragment = new NewsDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction().add(R.id.item_detail_container, fragment).commit();

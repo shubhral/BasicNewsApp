@@ -22,10 +22,12 @@ import app.news.agoda.com.R;
 import app.news.agoda.com.dagger.component.DaggerNewDetailActivityComponent;
 import app.news.agoda.com.dagger.component.NewDetailActivityComponent;
 import app.news.agoda.com.dagger.module.NewsDetailFragmentModule;
+import app.news.agoda.com.util.AppUtils;
 import app.news.agoda.com.view.BundleKeys;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import domain.news.agoda.com.model.NewsResponseDomain;
 
 public class NewsDetailFragment extends Fragment implements NewsDetailView {
 
@@ -39,10 +41,7 @@ public class NewsDetailFragment extends Fragment implements NewsDetailView {
     @Inject
     NewsDetailPresenter newsDetailPresenter;
 
-    private String storyURL;
-    private String imageURL;
-    private String title;
-    private String summary;
+    private String storyURL, imageURL, title, summary;
 
     public NewsDetailFragment() {
     }
@@ -51,11 +50,12 @@ public class NewsDetailFragment extends Fragment implements NewsDetailView {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getArguments().containsKey(BundleKeys.FULL_STORY_URL)) {
-            storyURL = getArguments().getString(BundleKeys.FULL_STORY_URL);
-            title = getArguments().getString(BundleKeys.TITLE);
-            summary = getArguments().getString(BundleKeys.DESCRIPTION);
-            imageURL = getArguments().getString(BundleKeys.TITLE_IMAGE_URL);
+        NewsResponseDomain result = getArguments().getParcelable(BundleKeys.RESULT);
+        if (result != null) {
+            storyURL = result.getUrl();
+            title = result.getTitle();
+            summary = result.getAbstract();
+            imageURL = AppUtils.getImageUrlFromResult(result);
         }
     }
 
